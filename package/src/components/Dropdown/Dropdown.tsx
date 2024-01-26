@@ -32,7 +32,7 @@ const Dropdown: FC<PropsWithChildren<DropdownProps>> = ({
 }) => {
   const dropdownRef = useRef<HTMLDivElement>(null);
   const [trigger, content] = React.Children.toArray(children);
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const dropdownEventProps = useDropdown({
     setIsOpen,
     isOpen,
